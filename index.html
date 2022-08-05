@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6  mt-5 p-3">
+          <div class="form-group">
+            <h4>Tính Tiền Lương Theo Giờ</h4>
+            <div class="form-group">
+              <p>Tiền lương 1H</p>
+              <input id="tienLuong1h" class="form-control ">
+            </div>
+            <br>
+            <div class="form-group">
+              <p>Số Giờ Làm</p>
+              <input id="SoGioLam" class="form-control">
+            </div>
+            <br>
+            <button onclick="tongTien()" class="btn-success">Tính Tiền</button>
+            <div class="mt-2 alert alert-success">
+              Kết Quả : <span id="traKetQua"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6  mt-5 p-3" style="border-left: 1px solid gray">
+          <div class="form-group">
+            <h3>Đổi Picon Tiền Tệ</h3>  
+            <div class="form-group">
+              <p>Pi Coin</p>
+              <input id="Picoin" class="form-control" >
+            </div>
+            <br>
+            <button id="btnDoiTien" class="btn-success">Đổi sang VND</button>
+            <div class="alert alert-primary mt-5">
+              Tổng Tiền : <span id="thanhTien" ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="loging mb-100">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white">
+              <h3 class="text-center">Đăng Nhập</h3>             
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Tài Khoản</p>
+                <input id="taikhoan" class="form-control">
+              </div>
+              <div class="form-group">
+                <p>Mật Khẩu</p>
+                <input id="matkhau" type="password" class="form-control">
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <div class="form-group">
+                <button onclick="longing()" id="btnLoging" class="btn-success" type="submit">Đăng Nhập</button>
+              </div>
+              <div class="mt-2 text-center">
+                <span id="KetQuaDangNhap">Kết Quả Đăng Nhập</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
